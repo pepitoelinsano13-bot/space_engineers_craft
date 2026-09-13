@@ -15,4 +15,8 @@ public class ClientModEvents {
         event.registerEntityRenderer(ModEntities.PHYSICAL_SHIP.get(), PhysicalShipRenderer::new);
         event.registerEntityRenderer(ModEntities.SATELLITE.get(), SatelliteRenderer::new);
     }
+
+    public static void onAddSectionGeometry(net.neoforged.neoforge.client.event.AddSectionGeometryEvent event) {
+        event.addRenderer(new SmoothTerrainSectionRenderer(event.getSectionOrigin()));
+    }
 }

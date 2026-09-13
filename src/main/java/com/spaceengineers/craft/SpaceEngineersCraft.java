@@ -38,6 +38,7 @@ public class SpaceEngineersCraft {
             modEventBus.addListener(SpaceEngineersCraft::registerClientGuiLayers);
             modEventBus.addListener(ClientModEvents::registerScreens);
             modEventBus.addListener(ClientModEvents::registerRenderers);
+            net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(ClientModEvents::onAddSectionGeometry);
         }
     }
 
