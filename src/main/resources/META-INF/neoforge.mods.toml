@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="space_engineers_craft"
+version="1.0.0"
+displayName="Space Engineers Craft"
+description='''A comprehensive Space Engineers experience for Minecraft 1.21.1:
+- Smooth non-cubic organic terrain & slope physics
+- Free 6DOF block placement, ship grids & sub-grids
+- Modular physical spaceships with Cockpit 6DOF HUD, Thrusters, Gyroscopes & Artificial Gravity
+- Pressurization, air vents & life support systems
+- Space dimensions: Low Earth Orbit, Moon (Luna), Mars (Ares), and Asteroids
+- Deployable satellites, solar arrays & ground telemetry terminals
+- Seamless atmosphere-to-orbit transitions
+- 100% compatible with Create and standard Minecraft mods!'''
+authors="Jose, Antigravity"
+
+[[dependencies.space_engineers_craft]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.space_engineers_craft]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,)"
+ordering="NONE"
+side="BOTH"

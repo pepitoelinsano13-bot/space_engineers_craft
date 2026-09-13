@@ -1,0 +1,19 @@
+{
+  "type": "space_engineers_craft:ares",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        {
+          "block": "space_engineers_craft:ares_rock",
+          "height": 40
+        },
+        {
+          "block": "space_engineers_craft:ares_sand",
+          "height": 4
+        }
+      ],
+      "biome": "minecraft:badlands"
+    }
+  }
+}

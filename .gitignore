@@ -1,0 +1,16 @@
+# Gradle
+.gradle/
+build/
+libs/
+
+# NeoForge / Minecraft Runs
+run/
+logs/
+*.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+bin/
+out/

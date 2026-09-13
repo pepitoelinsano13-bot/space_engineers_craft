@@ -1,0 +1,19 @@
+{
+  "type": "space_engineers_craft:luna",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        {
+          "block": "space_engineers_craft:lunar_stone",
+          "height": 40
+        },
+        {
+          "block": "space_engineers_craft:lunar_regolith",
+          "height": 4
+        }
+      ],
+      "biome": "minecraft:plains"
+    }
+  }
+}

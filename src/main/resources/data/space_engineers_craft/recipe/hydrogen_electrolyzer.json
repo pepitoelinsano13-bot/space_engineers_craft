@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CRC",
+    "CUC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "U": {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result": {
+    "id": "space_engineers_craft:hydrogen_electrolyzer",
+    "count": 1
+  }
+}

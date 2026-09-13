@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "space_engineers_craft:block/station_core"
+    }
+  }
+}
