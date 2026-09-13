@@ -31,42 +31,17 @@ public class ModItems {
     public static final DeferredItem<Item> HYDROGEN_BOTTLE = ITEMS.register("hydrogen_bottle",
             () -> new Item(new Item.Properties().stacksTo(16).rarity(Rarity.UNCOMMON)));
 
-    // Spacesuit Armor Material
-    public static final Holder<ArmorMaterial> SPACESUIT_MATERIAL = registerSpacesuitMaterial();
-
-    private static Holder<ArmorMaterial> registerSpacesuitMaterial() {
-        EnumMap<ArmorItem.Type, Integer> defense = new EnumMap<>(ArmorItem.Type.class);
-        defense.put(ArmorItem.Type.BOOTS, 3);
-        defense.put(ArmorItem.Type.LEGGINGS, 6);
-        defense.put(ArmorItem.Type.CHESTPLATE, 8);
-        defense.put(ArmorItem.Type.HELMET, 3);
-
-        return net.minecraft.core.Registry.registerForHolder(
-                net.minecraft.core.registries.BuiltInRegistries.ARMOR_MATERIAL,
-                net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(SpaceEngineersCraft.MOD_ID, "spacesuit"),
-                new ArmorMaterial(
-                        defense,
-                        15,
-                        SoundEvents.ARMOR_EQUIP_NETHERITE,
-                        () -> Ingredient.EMPTY,
-                        List.of(new ArmorMaterial.Layer(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(SpaceEngineersCraft.MOD_ID, "spacesuit"))),
-                        2.0F,
-                        0.1F
-                )
-        );
-    }
-
     public static final DeferredItem<SpacesuitItem> SPACESUIT_HELMET = ITEMS.register("spacesuit_helmet",
-            () -> new SpacesuitItem(SPACESUIT_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().durability(500).rarity(Rarity.RARE)));
+            () -> new SpacesuitItem(ModArmorMaterials.SPACESUIT, ArmorItem.Type.HELMET, new Item.Properties().durability(500).rarity(Rarity.RARE)));
 
     public static final DeferredItem<SpacesuitItem> SPACESUIT_CHESTPLATE = ITEMS.register("spacesuit_chestplate",
-            () -> new SpacesuitItem(SPACESUIT_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(600).rarity(Rarity.RARE)));
+            () -> new SpacesuitItem(ModArmorMaterials.SPACESUIT, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(600).rarity(Rarity.RARE)));
 
     public static final DeferredItem<SpacesuitItem> SPACESUIT_LEGGINGS = ITEMS.register("spacesuit_leggings",
-            () -> new SpacesuitItem(SPACESUIT_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(550).rarity(Rarity.RARE)));
+            () -> new SpacesuitItem(ModArmorMaterials.SPACESUIT, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(550).rarity(Rarity.RARE)));
 
     public static final DeferredItem<SpacesuitItem> SPACESUIT_BOOTS = ITEMS.register("spacesuit_boots",
-            () -> new SpacesuitItem(SPACESUIT_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(450).rarity(Rarity.RARE)));
+            () -> new SpacesuitItem(ModArmorMaterials.SPACESUIT, ArmorItem.Type.BOOTS, new Item.Properties().durability(450).rarity(Rarity.RARE)));
 
     // Block Items
     public static final DeferredItem<BlockItem> SHIP_CORE_ITEM = ITEMS.registerSimpleBlockItem(ModBlocks.SHIP_CORE);

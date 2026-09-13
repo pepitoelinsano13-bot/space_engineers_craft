@@ -26,6 +26,7 @@ public class SpaceEngineersCraft {
         LOGGER.info("Initializing Space Engineers Craft - Redefining Minecraft Physics, Terrain and Space Exploration!");
 
         ModBlocks.BLOCKS.register(modEventBus);
+        com.spaceengineers.craft.registry.ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModEntities.ENTITIES.register(modEventBus);
         ModMenus.MENUS.register(modEventBus);
